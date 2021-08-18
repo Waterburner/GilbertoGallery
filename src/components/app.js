@@ -1,11 +1,43 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Navbar from "./navigation/navbar";
 import Home from "./home";
+import About from "./pages/about";
+import ContactContainer from "./pages/contact";
+import GalleryContainer from "./pages/GalleryContainer";
+// import Footer from "./navigation/footer";
+import Auth from "./pages/auth";
+import NoMatch from "./pages/noMatch";
 
 export default class App extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            logged_in: false,
+        };
+    }
+
     render() {
         return (
             <div className="app">
-                <Home />
+                <Router>
+                    <Navbar />
+
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+
+                        <Route path="/about" component={About} />
+                        <Route path="/contact" component={ContactContainer} />
+                        <Route path="/gallery" component={GalleryContainer} />
+                        <Route path="/auth" component={Auth} />
+
+                        <Route component={NoMatch} />
+                    </Switch>
+
+                    {/* <Footer /> */}
+                </Router>
             </div>
         );
     }

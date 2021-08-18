@@ -1,6 +1,6 @@
-html {
-    font-size: 62.5%; // 1rem is 10px
-}
+// html {
+//     font-size: 62.5%; // 1rem is 10px
+// }
 
 *,
 *::after,
@@ -8,7 +8,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    font-family: 'montserrat';
+    font-family: "montserrat";
 }
 
 body {
@@ -22,7 +22,48 @@ body {
 }
 
 .app {
-    margin-top: 2rem;
+    // margin-top: 2rem;
     display: grid;
     justify-items: center;
 }
+
+// ============================
+// variables
+
+$baby-blue: rgb(91, 192, 222);
+
+// ============================
+
+.navigation-wrapper {
+    width: 100%;
+    background-color: $baby-blue;
+    height: 10vh;
+    min-height: 50px;
+    max-height: 85px;
+    display: flex;
+    align-items: center;
+
+    .navigation {
+        padding: 0 15px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .left {
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+    }
+}
+
+// ============== End of navigation===========
+
+//============ homepage ==============
+
+//============ end of homepage ==============
