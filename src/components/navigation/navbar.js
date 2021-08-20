@@ -31,7 +31,31 @@ const NavigationComponent = (props) => {
                 </div>
 
                 <div className="right">
-                    <div className="hamburger">===</div>
+                    <div className="hamburger-container">
+                        <div className="hamburger">===</div>
+                        <div className="hamburger-dropdown-list-container">
+                            <ul className="dropdown-list">
+                                <a href="/gallery">
+                                    <li className="nav-dropdown-item">
+                                        gallery
+                                    </li>
+                                </a>
+                                <a href="/about">
+                                    <li className="nav-dropdown-item">
+                                        about us
+                                    </li>
+                                </a>
+                                <a href="/contact">
+                                    <li className="nav-dropdown-item">
+                                        contacts
+                                    </li>
+                                </a>
+                                <a href="/auth">
+                                    <li className="nav-dropdown-item">login</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
