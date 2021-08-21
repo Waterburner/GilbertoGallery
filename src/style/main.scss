@@ -87,7 +87,7 @@ $navbar-banner: "#{$imgpath}/banners/wooden-texture.jpg";
     .navigation-wrapper {
         width: 100%;
         background-color: $darker;
-        height: 10vh;
+        height: 15vh;
         min-height: 50px;
         max-height: 85px;
         display: flex;
@@ -189,7 +189,6 @@ $welcomeSectionBg: "https://i.pinimg.com/originals/17/6d/25/176d25cb6b297ca2f798
             background: url(#{$welcomeSectionBg}) $dark-blue no-repeat center
                 center fixed;
             background-size: cover;
-
             // testing
             // background-color: red;
             //end testing
@@ -240,9 +239,40 @@ $welcomeSectionBg: "https://i.pinimg.com/originals/17/6d/25/176d25cb6b297ca2f798
         // ==============================
 
         .description-section-wrapper {
+            background-color: $brown;
+            padding: 0 100px;
             .description-section {
                 .description-heading {
-                    text-transform: uppercase;
+                    .heading {
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .description-content-wrapper {
+                    display: flex;
+
+                    .description-img-wrapper {
+                        width: 350px;
+                        border: 1px solid black;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+
+        .highlights-section-wrapper {
+            padding: 0 150px;
+            text-transform: uppercase;
+            text-align: center;
+            .highlights-section {
+                display: flex;
+                justify-content: space-between;
+
+                .img-wrapper {
+                    width: 150px;
+                    height: 150px;
+                    border: 1px solid black;
                 }
             }
         }

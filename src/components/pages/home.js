@@ -32,48 +32,55 @@ export default class Home extends Component {
                             </div>
                         </div>
 
-                        <div className="description-section-wrapper">
-                            <div className="description-section">
-                                <div className="description-heading">
-                                    <h3 className="heading">
-                                        some heading text
-                                    </h3>
-                                </div>
-                                <div className="description-img-wrapper">
-                                    img
-                                    {/* <img className="description-img" src="" alt="" /> */}
-                                </div>
-                                <div className="description-text-wrapper">
-                                    <p className="description-text">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Aliquam impedit
-                                        quaerat reiciendis ab reprehenderit
-                                        obcaecati necessitatibus eaque voluptas
-                                        maxime, nemo molestias ducimus, modi sit
-                                        esse eveniet iste nihil dignissimos
-                                        magnam. Placeat, totam.
-                                    </p>
+                        <div className="homepage-content-wrapper">
+                            <div className="description-section-wrapper">
+                                <div className="description-section">
+                                    <div className="description-heading">
+                                        <h3 className="heading">
+                                            some heading text
+                                        </h3>
+                                    </div>
+                                    <div className="description-content-wrapper">
+                                        <div className="description-img-wrapper">
+                                            img
+                                            {/* <img className="description-img" src="" alt="" /> */}
+                                        </div>
+                                        <div className="description-text-wrapper">
+                                            <p className="description-text">
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Aliquam impedit quaerat
+                                                reiciendis ab reprehenderit
+                                                obcaecati necessitatibus eaque
+                                                voluptas maxime, nemo molestias
+                                                ducimus, modi sit esse eveniet
+                                                iste nihil dignissimos magnam.
+                                                Placeat, totam.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="highlights-section-wrapper">
-                            <div className="highlights-section">
-                                <div className="left-side">
-                                    <div className="img-wrapper">
-                                        img
-                                        {/* <img src="" alt="" /> */}
+                            <div className="highlights-section-wrapper">
+                                featured works
+                                <div className="highlights-section">
+                                    <div className="left-side">
+                                        <div className="img-wrapper">
+                                            img
+                                            {/* <img src="" alt="" /> */}
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="center">
-                                    <div className="img-wrapper">
-                                        img
-                                        {/* <img src="" alt="" /> */}
+                                    <div className="center">
+                                        <div className="img-wrapper">
+                                            img
+                                            {/* <img src="" alt="" /> */}
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="right-side">
-                                    <div className="img-wrapper">
-                                        img
-                                        {/* <img src="" alt="" /> */}
+                                    <div className="right-side">
+                                        <div className="img-wrapper">
+                                            img
+                                            {/* <img src="" alt="" /> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
