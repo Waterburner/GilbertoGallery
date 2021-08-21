@@ -19,20 +19,22 @@ const NavigationComponent = (props) => {
                 <div className="left">
                     {/* <div className="left">Home</div> */}
                     <NavLink exact to="/" className="nav-link">
-                        <div className="left">Home</div>
+                        <div className="navbar-link">Home</div>
                     </NavLink>
                 </div>
 
                 <div className="center">
                     <div className="logo">
                         {/* Hard refresh when click on logo */}
-                        <a href="#">Logo</a>
+                        <a className="navbar-link" href="#">
+                            Logo
+                        </a>
                     </div>
                 </div>
 
                 <div className="right">
                     <div className="hamburger-container">
-                        <div className="hamburger">===</div>
+                        <div className="hamburger navbar-link">===</div>
                         <div className="hamburger-dropdown-list-container">
                             <ul className="dropdown-list">
                                 <a href="/gallery">
