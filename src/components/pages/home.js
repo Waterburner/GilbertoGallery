@@ -17,7 +17,6 @@ export default class Home extends Component {
                                         <span className="heading-txt">e</span>
                                         <span className="heading-txt">r</span>
                                         <span className="heading-txt">t</span>
-                                        <span className="heading-txt">o</span>
                                     </h1>
                                     <h2 className="main-subheading heading">
                                         <span className="heading-txt">g</span>
