@@ -1,0 +1,101 @@
+// ======================== navbar ============================
+
+// mixins
+$navbar-banner: "#{$imgpath}/banners/wooden-texture.jpg";
+
+// end of mixins
+.navigation-container {
+    width: 100%;
+    background-color: $brown;
+    background: url(#{$navbar-banner}) center center no-repeat;
+    background-size: cover;
+
+    .navigation-wrapper {
+        width: 100%;
+        background-color: $darker;
+        height: 15vh;
+        min-height: 50px;
+        max-height: 85px;
+        display: flex;
+        align-items: center;
+
+        .navigation {
+            padding: 0 15px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .navbar-link {
+                color: $goldenrod;
+            }
+
+            // .left {
+            // }
+
+            .center {
+                text-align: center;
+            }
+
+            .right {
+                display: flex;
+                justify-content: flex-end;
+
+                .hamburger-container {
+                    .hamburger-dropdown-list-container {
+                        overflow: hidden;
+                        .dropdown-list {
+                            @include woodenBg();
+
+                            transition: 0.5s ease-out;
+                            border: transparent solid 1px;
+                            background-color: $brown;
+                            visibility: hidden;
+                            overflow: hidden;
+                            z-index: 2;
+                            width: 20px;
+                            position: absolute;
+                            bottom: 100vh;
+                            right: 20px;
+                            min-width: 200px;
+
+                            ul {
+                                padding: 0px;
+                                margin: 0px;
+                            }
+
+                            a {
+                                color: $offwhite;
+                                li {
+                                    list-style-type: none;
+                                    text-align: center;
+                                    font-size: 1.5em;
+                                    font-weight: bold;
+                                }
+
+                                &:hover {
+                                    color: $goldenrod;
+
+                                    li {
+                                        background-color: $brown;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .dropdown-list {
+                            bottom: auto;
+                            width: 33vw;
+                            height: auto;
+                            border-color: black;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ============== End of navigation===========

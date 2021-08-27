@@ -1,0 +1,106 @@
+//============ homepage ==============
+
+$heading-color: black;
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
+$welcomeSectionBg: "https://i.pinimg.com/originals/17/6d/25/176d25cb6b297ca2f798a2301decee2e.jpg";
+
+.homepage-wrapper {
+    .homepage {
+        .welcome-section-wrapper {
+            background: url(#{$welcomeSectionBg}) $dark-blue no-repeat center
+                center fixed;
+            background-size: cover;
+            // testing
+            // background-color: red;
+            //end testing
+            min-height: 300px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .welcome-section {
+                background-color: rgba($color: #000000, $alpha: 0.3);
+                .heading-wrapper {
+                    padding-bottom: 25px;
+                    .heading {
+                        padding: 25px 0;
+                        margin: 0 50px;
+                        text-transform: uppercase;
+                        line-height: 1em;
+                        display: flex;
+                        justify-content: space-between;
+
+                        span {
+                            font-family: "Oswald", sans-serif;
+                            color: $heading-color;
+                            text-shadow: 0 0 5px #e6af2e;
+                            text-shadow: 0 0 10px #e6af2e;
+                            text-shadow: 0 0 20px #e6af2e;
+                            text-shadow: 0 0 40px #e6af2e;
+                        }
+                    }
+
+                    .main-heading {
+                        text-align: center;
+                        font-size: 13em;
+                    }
+
+                    .main-subheading {
+                        text-align: center;
+                        font-size: 2em;
+                        padding: 0 12px;
+                        span {
+                            text-shadow: 0 0 10px #e6af2e;
+                        }
+                    }
+                }
+            }
+        }
+
+        // ==============================
+
+        .description-section-wrapper {
+            background-color: $brown;
+            padding: 0 100px;
+            .description-section {
+                .description-heading {
+                    .heading {
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .description-content-wrapper {
+                    display: flex;
+
+                    .description-img-wrapper {
+                        width: 350px;
+                        border: 1px solid black;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+
+        .highlights-section-wrapper {
+            padding: 0 150px;
+            text-transform: uppercase;
+            text-align: center;
+            .highlights-section {
+                display: flex;
+                justify-content: space-between;
+
+                .img-wrapper {
+                    width: 150px;
+                    height: 150px;
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+}
+
+//============ end of homepage ==============
