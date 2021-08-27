@@ -1,21 +1,9 @@
-//============ homepage ==============
-
-$heading-color: black;
-
-// fonts
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
-
-$welcomeSectionBg: "https://i.pinimg.com/originals/17/6d/25/176d25cb6b297ca2f798a2301decee2e.jpg";
-
 .homepage-wrapper {
     .homepage {
         .welcome-section-wrapper {
             background: url(#{$welcomeSectionBg}) $dark-blue no-repeat center
                 center fixed;
             background-size: cover;
-            // testing
-            // background-color: red;
-            //end testing
             min-height: 300px;
             height: 80vh;
             display: flex;
