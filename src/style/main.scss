@@ -175,7 +175,53 @@ $navbar-banner: "#{$imgpath}/banners/wooden-texture.jpg";
 // ============== End of navigation===========
 
 // ============== footer ================
+.footer {
+    margin-top: 10px;
+    background: url(#{$navbar-banner}) center center no-repeat;
+    background-size: cover;
+    width: 100%;
 
+    .footer-wrapper {
+        min-height: 90px;
+        background-color: $darker;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        color: $goldenrod;
+
+        .footer-left-pages {
+            padding: 5px 20px 5px 50px;
+            align-content: right;
+        }
+
+        .footer-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .logo {
+                padding-bottom: 5px;
+            }
+            .social-btns-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
+        .footer-right {
+            .footer-right-wrapper {
+                display: flex;
+                .footer-contacts-left {
+                    padding-right: 5px;
+                }
+                .footer-contacts-right {
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}
 // ==============End of footer ================
 
 //============ homepage ==============

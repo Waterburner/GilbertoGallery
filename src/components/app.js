@@ -6,7 +6,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import ContactContainer from "./pages/contact";
 import GalleryContainer from "./pages/GalleryContainer";
-// import Footer from "./navigation/footer";
+import Footer from "./navigation/footer";
 import Auth from "./pages/auth";
 import NoMatch from "./pages/noMatch";
 
@@ -36,7 +36,7 @@ export default class App extends Component {
                         <Route component={NoMatch} />
                     </Switch>
 
-                    {/* <Footer /> */}
+                    <Footer />
                 </Router>
             </div>
         );
