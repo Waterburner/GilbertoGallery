@@ -1,0 +1,12 @@
+// mixins ====================
+// variables for path img etc
+// // usage example: $logo-img: '#{$assetPath}logo.png';
+// // usage example: background: url(#{$imgpath}/hero-image.jpg) no-repeat left bottom;
+
+$imgpath: "../../static/assets/imgs";
+
+@mixin woodenBg {
+    background: url("../../static/assets/imgs/banners/wooden-texture.jpg")
+        center center no-repeat;
+    background-size: cover;
+}
