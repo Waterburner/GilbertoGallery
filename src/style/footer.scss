@@ -1,9 +1,15 @@
 // ============== footer ================
 .footer {
     margin-top: 10px;
+    border-top: 1px solid black;
+    width: 100%;
+    background-color: $brown;
     background: url(#{$navbar-banner}) center center no-repeat;
     background-size: cover;
-    width: 100%;
+
+    .nav-link {
+        color: $goldenrod;
+    }
 
     .footer-wrapper {
         min-height: 90px;

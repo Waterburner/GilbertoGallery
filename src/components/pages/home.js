@@ -32,11 +32,20 @@ export default class Home extends Component {
                         </div>
 
                         <div className="homepage-content-wrapper">
+                            <div className="upcoming-events-wrapper">
+                                <div className="upcoming-events">
+                                    <div className="upcoming-events-heading">
+                                        <h3 className="section-heading">
+                                            upcoming events component goes here
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
                             <div className="description-section-wrapper">
                                 <div className="description-section">
                                     <div className="description-heading">
-                                        <h3 className="heading">
-                                            some heading text
+                                        <h3 className="section-heading">
+                                            description section heading
                                         </h3>
                                     </div>
                                     <div className="description-content-wrapper">

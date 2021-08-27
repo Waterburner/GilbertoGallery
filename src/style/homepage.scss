@@ -50,12 +50,25 @@
 
         // ==============================
 
+        .upcoming-events-wrapper {
+            .upcoming-events {
+                .upcoming-events-heading {
+                    .section-heading {
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        // ==============================
+
         .description-section-wrapper {
             background-color: $brown;
             padding: 0 100px;
             .description-section {
                 .description-heading {
-                    .heading {
+                    .section-heading {
                         text-align: center;
                         text-transform: uppercase;
                     }

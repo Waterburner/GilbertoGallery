@@ -1,12 +1,31 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router";
+import { NavLink } from "react-router-dom";
 
-export default function () {
+const FooterComponent = () => {
+    const dynamicLink = (route, linkText) => {
+        return (
+            <div className="nav-link-wrapper">
+                <NavLink to={route} activeClassName="nav-link-active">
+                    {linkText}
+                </NavLink>
+            </div>
+        );
+    };
     return (
         <div className="footer">
             <div className="footer-wrapper">
                 <div className="footer-left">
-                    <div className="footer-left-pages">Home</div>
-                    <div className="footer-left-pages">Contact</div>
+                    <div className="footer-left-pages">
+                        <NavLink exact to="/" className="nav-link">
+                            Home
+                        </NavLink>
+                    </div>
+                    <div className="footer-left-pages">
+                        <NavLink to="/contact" className="nav-link">
+                            Contact
+                        </NavLink>
+                    </div>
                 </div>
                 <div className="footer-center">
                     <div className="logo">Logo</div>
@@ -42,4 +61,6 @@ export default function () {
             </div>
         </div>
     );
-}
+};
+
+export default withRouter(FooterComponent);
