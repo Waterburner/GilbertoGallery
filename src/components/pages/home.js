@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+
 import UpcomingEventsComponent from "./homepage/upcomingEvents";
+import DescriptionSectionComponent from "./homepage/descriptionSection";
 
 // ================= demo
 // art img:
@@ -11,9 +13,6 @@ import UpcomingEventsComponent from "./homepage/upcomingEvents";
 // "https://www.pixelle.co/wp-content/uploads/2016/12/Van-Gogh-900x660.jpg";
 // "https://upload.wikimedia.org/wikipedia/commons/3/39/Leonardo_da_Vinci_043-mod.jpg";
 // incognitoImg "https://www.virtosuart.com/images/2019/blog-new/main/R2_abstract-artist-gheorghe-virtosu.jpg";
-
-let artistImg =
-    "https://www.virtosuart.com/images/2019/blog-new/main/R2_abstract-artist-gheorghe-virtosu.jpg";
 
 let featuredImgs = [
     "https://static.bimago.com/mediacache/catalog/product/cache/9/9/92599/image/1000x1000/2c7b4536f19c865c4581272714395aee/92599_1.jpg",
@@ -69,35 +68,7 @@ export default class Home extends Component {
                                 ) : null}
                             </div>
                             <div className="description-section-wrapper">
-                                <div className="description-section">
-                                    <div className="description-heading">
-                                        <h3 className="section-heading">
-                                            description section heading
-                                        </h3>
-                                    </div>
-                                    <div className="description-content-wrapper">
-                                        <div className="description-img-wrapper">
-                                            <img
-                                                className="description-img"
-                                                src={artistImg}
-                                                alt="artist's photo"
-                                            />
-                                        </div>
-                                        <div className="description-text-wrapper">
-                                            <p className="description-text">
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipisicing elit.
-                                                Aliquam impedit quaerat
-                                                reiciendis ab reprehenderit
-                                                obcaecati necessitatibus eaque
-                                                voluptas maxime, nemo molestias
-                                                ducimus, modi sit esse eveniet
-                                                iste nihil dignissimos magnam.
-                                                Placeat, totam.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <DescriptionSectionComponent />
                             </div>
                             <div className="highlights-section-wrapper">
                                 <h3 className="section-heading">
