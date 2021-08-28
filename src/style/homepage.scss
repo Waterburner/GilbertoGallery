@@ -49,55 +49,76 @@
         }
 
         // ==============================
+        .homepage-content-wrapper {
+            background: url("#{$imgpath}/banners/wooden-texture.jpg") $dark-blue
+                no-repeat center center;
+            background-size: cover;
 
-        .upcoming-events-wrapper {
-            .upcoming-events {
-                .upcoming-events-heading {
-                    .section-heading {
-                        text-align: center;
-                        text-transform: uppercase;
+            color: $goldenrod;
+
+            .upcoming-events-wrapper {
+                .upcoming-events {
+                    .upcoming-events-heading {
+                        .section-heading {
+                            text-align: center;
+                            text-transform: uppercase;
+                        }
                     }
                 }
             }
-        }
 
-        // ==============================
+            // ==============================
 
-        .description-section-wrapper {
-            background-color: $brown;
-            padding: 0 100px;
-            .description-section {
-                .description-heading {
-                    .section-heading {
-                        text-align: center;
-                        text-transform: uppercase;
+            .description-section-wrapper {
+                background-color: $darker;
+                height: 220px;
+                padding: 10px 100px 20px;
+                .description-section {
+                    .description-heading {
+                        .section-heading {
+                            text-align: center;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .description-content-wrapper {
+                        .description-img-wrapper {
+                            float: left;
+                            width: 200px;
+                            border: 1px solid black;
+                            height: 200px;
+                            margin: 0 20px 20px;
+
+                            img {
+                                width: inherit;
+                                height: inherit;
+                            }
+                        }
                     }
                 }
+            }
 
-                .description-content-wrapper {
+            .highlights-section-wrapper {
+                padding: 20px 7vw;
+
+                .section-heading {
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                .highlights-section {
                     display: flex;
+                    justify-content: space-between;
 
-                    .description-img-wrapper {
-                        width: 350px;
+                    .img-wrapper {
+                        width: 325px;
+                        height: 325px;
                         border: 1px solid black;
-                        height: 150px;
+                        img {
+                            width: inherit;
+                            height: inherit;
+                        }
                     }
-                }
-            }
-        }
-
-        .highlights-section-wrapper {
-            padding: 0 150px;
-            text-transform: uppercase;
-            text-align: center;
-            .highlights-section {
-                display: flex;
-                justify-content: space-between;
-
-                .img-wrapper {
-                    width: 150px;
-                    height: 150px;
-                    border: 1px solid black;
                 }
             }
         }

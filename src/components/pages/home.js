@@ -1,6 +1,37 @@
 import React, { Component } from "react";
+import UpcomingEventsComponent from "./homepage/upcomingEvents";
+
+// ================= demo
+// art img:
+// https://www.kazoart.com/blog/wp-content/uploads/2019/04/Pollocl-convergence.jpg
+// https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/6/18/1434647790018/d0bb6745-5cbe-4f5a-993d-4c9b25ab86b8-2060x1479.jpeg?width=465&quality=45&auto=format&fit=max&dpr=2&s=446f767582a2c8b288be76dd1113a62a
+// van gogh https://www.biography.com/.image/t_share/MTY2NTIzMzc4MTI2MDM4MjM5/vincent_van_gogh_self_portrait_painting_musee_dorsay_via_wikimedia_commons_promojpg.jpg
+
+// "https://static.bimago.com/mediacache/catalog/product/cache/9/9/92599/image/1000x1000/2c7b4536f19c865c4581272714395aee/92599_1.jpg";
+// "https://www.pixelle.co/wp-content/uploads/2016/12/Van-Gogh-900x660.jpg";
+// "https://upload.wikimedia.org/wikipedia/commons/3/39/Leonardo_da_Vinci_043-mod.jpg";
+// incognitoImg "https://www.virtosuart.com/images/2019/blog-new/main/R2_abstract-artist-gheorghe-virtosu.jpg";
+
+let artistImg =
+    "https://www.virtosuart.com/images/2019/blog-new/main/R2_abstract-artist-gheorghe-virtosu.jpg";
+
+let featuredImgs = [
+    "https://static.bimago.com/mediacache/catalog/product/cache/9/9/92599/image/1000x1000/2c7b4536f19c865c4581272714395aee/92599_1.jpg",
+    "https://www.pixelle.co/wp-content/uploads/2016/12/Van-Gogh-900x660.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/3/39/Leonardo_da_Vinci_043-mod.jpg",
+];
+
+// ============ end of demo
 
 export default class Home extends Component {
+    constructor() {
+        super();
+
+        this.state = {
+            upcomingEvents: false,
+        };
+    }
+
     render() {
         return (
             <div>
@@ -33,13 +64,9 @@ export default class Home extends Component {
 
                         <div className="homepage-content-wrapper">
                             <div className="upcoming-events-wrapper">
-                                <div className="upcoming-events">
-                                    <div className="upcoming-events-heading">
-                                        <h3 className="section-heading">
-                                            upcoming events component goes here
-                                        </h3>
-                                    </div>
-                                </div>
+                                {this.state.upcomingEvents ? (
+                                    <UpcomingEventsComponent />
+                                ) : null}
                             </div>
                             <div className="description-section-wrapper">
                                 <div className="description-section">
@@ -50,8 +77,11 @@ export default class Home extends Component {
                                     </div>
                                     <div className="description-content-wrapper">
                                         <div className="description-img-wrapper">
-                                            img
-                                            {/* <img className="description-img" src="" alt="" /> */}
+                                            <img
+                                                className="description-img"
+                                                src={artistImg}
+                                                alt="artist's photo"
+                                            />
                                         </div>
                                         <div className="description-text-wrapper">
                                             <p className="description-text">
@@ -70,24 +100,32 @@ export default class Home extends Component {
                                 </div>
                             </div>
                             <div className="highlights-section-wrapper">
-                                featured works
+                                <h3 className="section-heading">
+                                    featured works
+                                </h3>
                                 <div className="highlights-section">
                                     <div className="left-side">
                                         <div className="img-wrapper">
-                                            img
-                                            {/* <img src="" alt="" /> */}
+                                            <img
+                                                src={featuredImgs[0]}
+                                                alt="featured painting"
+                                            />
                                         </div>
                                     </div>
                                     <div className="center">
                                         <div className="img-wrapper">
-                                            img
-                                            {/* <img src="" alt="" /> */}
+                                            <img
+                                                src={featuredImgs[1]}
+                                                alt="featured painting"
+                                            />
                                         </div>
                                     </div>
                                     <div className="right-side">
                                         <div className="img-wrapper">
-                                            img
-                                            {/* <img src="" alt="" /> */}
+                                            <img
+                                                src={featuredImgs[2]}
+                                                alt="featured painting"
+                                            />
                                         </div>
                                     </div>
                                 </div>
