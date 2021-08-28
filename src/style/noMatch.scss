@@ -1,0 +1,32 @@
+.nomatch-wrapper {
+    width: 100%;
+    background: url("#{$imgpath}/banners/wooden-texture.jpg") $dark-blue
+        no-repeat center center;
+    background-size: cover;
+
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nomatch {
+        h1 {
+            font-size: 5em;
+            text-shadow: 0 0 5px black;
+            text-shadow: 0 0 10px black;
+            text-shadow: 0 0 20px black;
+        }
+
+        h2 {
+            font-size: 3em;
+            text-shadow: 0 0 5px black;
+            text-shadow: 0 0 10px black;
+        }
+
+        h1,
+        h2 {
+            color: $goldenrod;
+            text-align: center;
+        }
+    }
+}
