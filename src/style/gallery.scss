@@ -1,0 +1,12 @@
+.gallery-container {
+    width: 100%;
+
+    min-height: 300px;
+
+    .gallery {
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}

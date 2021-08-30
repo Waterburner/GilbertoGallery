@@ -1,6 +1,9 @@
-// html {
-//     font-size: 62.5%; // 1rem is 10px
-// }
+html {
+    //     font-size: 62.5%; // 1rem is 10px
+    background: url("#{$imgpath}/banners/wooden-texture.jpg") center center
+        $brown no-repeat;
+    background-size: 100% 100%;
+}
 
 *,
 *::after,
