@@ -1,4 +1,8 @@
 .homepage-wrapper {
+    .homepage-content-wrapper > div {
+        background-color: $darker;
+    }
+
     .homepage {
         .welcome-section-wrapper {
             background: url(#{$welcomeSectionBg}) $dark-blue no-repeat center
@@ -70,7 +74,6 @@
             // ==============================
 
             .description-section-wrapper {
-                background-color: $darker;
                 height: 220px;
                 padding: 10px 100px 20px;
                 .description-section {

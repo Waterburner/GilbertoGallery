@@ -20,10 +20,13 @@ $navbar-banner: "#{$imgpath}/banners/wooden-texture.jpg";
         align-items: center;
 
         .navigation {
+            background-image: linear-gradient(black, transparent);
+            height: 100%;
             padding: 0 15px;
             width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
 
             .navbar-link {
                 color: $goldenrod;

@@ -13,6 +13,7 @@
     .footer-wrapper {
         min-height: 90px;
         background-color: $darker;
+        background-image: linear-gradient(transparent, black);
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-gap: 20px;
