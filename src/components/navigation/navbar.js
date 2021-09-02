@@ -38,26 +38,56 @@ const NavigationComponent = (props) => {
                             <div className="hamburger navbar-link">===</div>
                             <div className="hamburger-dropdown-list-container">
                                 <ul className="dropdown-list">
-                                    <a href="/gallery">
-                                        <li className="nav-dropdown-item">
-                                            gallery
-                                        </li>
-                                    </a>
-                                    <a href="/about">
-                                        <li className="nav-dropdown-item">
-                                            about us
-                                        </li>
-                                    </a>
-                                    <a href="/contact">
-                                        <li className="nav-dropdown-item">
-                                            contacts
-                                        </li>
-                                    </a>
-                                    <a href="/auth">
-                                        <li className="nav-dropdown-item">
-                                            login
-                                        </li>
-                                    </a>
+                                    <li className="nav-dropdown-item">
+                                        <NavLink
+                                            to="/events"
+                                            className="nav-link nav-dropdown-item"
+                                        >
+                                            <div className="navbar-link nav-dropdown-item">
+                                                events
+                                            </div>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-dropdown-item">
+                                        <NavLink
+                                            to="gallery"
+                                            className="nav-link nav-dropdown-item"
+                                        >
+                                            <div className="navbar-link nav-dropdown-item">
+                                                gallery
+                                            </div>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-dropdown-item">
+                                        <NavLink
+                                            to="/about"
+                                            className="nav-link nav-dropdown-item"
+                                        >
+                                            <div className="navbar-link nav-dropdown-item">
+                                                about us
+                                            </div>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-dropdown-item">
+                                        <NavLink
+                                            to="/contact"
+                                            className="nav-link nav-dropdown-item"
+                                        >
+                                            <div className="navbar-link nav-dropdown-item">
+                                                contacts
+                                            </div>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-dropdown-item">
+                                        <NavLink
+                                            to="/auth"
+                                            className="nav-link nav-dropdown-item"
+                                        >
+                                            <div className="navbar-link nav-dropdown-item">
+                                                login
+                                            </div>
+                                        </NavLink>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

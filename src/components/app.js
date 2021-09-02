@@ -9,6 +9,7 @@ import GalleryContainer from "./pages/GalleryContainer";
 import Footer from "./navigation/footer";
 import Auth from "./pages/auth";
 import NoMatch from "./pages/noMatch";
+import EventsContainer from "./eventsContainer";
 
 export default class App extends Component {
     constructor(props) {
@@ -28,6 +29,7 @@ export default class App extends Component {
                     <Switch>
                         <Route exact path="/" component={Home} />
 
+                        <Route path="/events" component={EventsContainer} />
                         <Route path="/about" component={About} />
                         <Route path="/contact" component={ContactContainer} />
                         <Route path="/gallery" component={GalleryContainer} />

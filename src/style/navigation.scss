@@ -58,14 +58,9 @@ $navbar-banner: "#{$imgpath}/banners/wooden-texture.jpg";
                             right: 20px;
                             min-width: 200px;
 
-                            ul {
-                                padding: 0px;
-                                margin: 0px;
-                            }
-
-                            a {
-                                color: $offwhite;
-                                li {
+                            .nav-link {
+                                div {
+                                    color: $offwhite;
                                     list-style-type: none;
                                     text-align: center;
                                     font-size: 1.5em;
@@ -73,9 +68,8 @@ $navbar-banner: "#{$imgpath}/banners/wooden-texture.jpg";
                                 }
 
                                 &:hover {
-                                    color: $goldenrod;
-
-                                    li {
+                                    div {
+                                        color: $goldenrod;
                                         background-color: $brown;
                                     }
                                 }
