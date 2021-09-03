@@ -78,7 +78,7 @@ export default class Home extends Component {
                                     <div className="left-side">
                                         <div className="img-wrapper">
                                             <img
-                                                src={featuredImgs[0]}
+                                                src={featuredImgs[0]} // on top in "demo" comment
                                                 alt="featured painting"
                                             />
                                         </div>
@@ -86,7 +86,7 @@ export default class Home extends Component {
                                     <div className="center">
                                         <div className="img-wrapper">
                                             <img
-                                                src={featuredImgs[1]}
+                                                src={featuredImgs[1]} // on top in "demo" comment
                                                 alt="featured painting"
                                             />
                                         </div>
@@ -94,7 +94,7 @@ export default class Home extends Component {
                                     <div className="right-side">
                                         <div className="img-wrapper">
                                             <img
-                                                src={featuredImgs[2]}
+                                                src={featuredImgs[2]} // on top in "demo" comment
                                                 alt="featured painting"
                                             />
                                         </div>
