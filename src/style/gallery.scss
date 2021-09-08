@@ -3,6 +3,38 @@
 
     min-height: 300px;
 
+    .gallery-filter-bar-wrapper {
+        border-top: 1px solid rgb(150, 115, 27);
+        border-bottom: 1px solid rgb(150, 115, 27);
+        .gallery-filter-bar {
+            display: flex;
+
+            .filter-bar-btn-wrapper {
+                display: flex;
+                flex-grow: 1;
+
+                height: 30px;
+                background-color: rgba(0, 0, 0, 0.4);
+
+                &:hover {
+                    .filter-bar-btn {
+                        background-color: $selected-darker;
+                    }
+                }
+
+                .filter-bar-btn {
+                    text-align: center;
+                    line-height: 30px;
+                    width: 100%;
+                    height: 100%;
+                    // background-color: $selected-darker; this is hover/active color
+                    text-transform: uppercase;
+                    color: $goldenrod;
+                }
+            }
+        }
+    }
+
     .gallery {
         height: 500px;
         display: grid;
