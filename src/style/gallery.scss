@@ -3,6 +3,8 @@
 
     min-height: 300px;
 
+    background-color: $darker;
+
     .gallery-filter-bar-wrapper {
         border-top: 1px solid rgb(150, 115, 27);
         border-bottom: 1px solid rgb(150, 115, 27);
@@ -14,11 +16,9 @@
                 flex-grow: 1;
 
                 height: 30px;
-                background-color: rgba(0, 0, 0, 0.4);
-
                 &:hover {
                     .filter-bar-btn {
-                        background-color: $selected-darker;
+                        background-color: $darker;
                     }
                 }
 
@@ -36,9 +36,23 @@
     }
 
     .gallery {
-        height: 500px;
+        padding: 30px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
+        grid-gap: 30px;
+        .galleryItem {
+            padding: 10px;
+            .galleryItem-wrapper {
+                border-image-width: 2em;
+                border-image-source: url("../../static/assets/imgs/gallery_frames/gold-frame-fancy-transp.png");
+                border-image-slice: 8%;
+                border-image-outset: 8 8 5 8;
+
+                .gallery-item-img {
+                    border: 1px solid black;
+                    width: 100%;
+                }
+            }
+        }
     }
 }

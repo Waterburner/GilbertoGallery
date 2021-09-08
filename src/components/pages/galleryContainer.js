@@ -24,12 +24,12 @@ export default function () {
                 </div>
             </div>
             <h2>Gallery Container Page</h2>
-            {/* <div className="gallery">
+            <div className="gallery">
                 <GalleryItem />
                 <GalleryItem />
                 <GalleryItem />
                 <GalleryItem />
-            </div> */}
+            </div>
         </div>
     );
 }

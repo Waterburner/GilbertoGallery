@@ -56,12 +56,24 @@
 
 import React, { Component } from "react";
 
-import frame from "../../../static/assets/imgs/gallery_frames/gold-frame-fancy-transp.png";
+import fancyFrame from "../../../static/assets/imgs/gallery_frames/gold-frame-fancy-transp.png";
+import modestFrame from "../../../static/assets/imgs/gallery_frames/gold-frame-simple-transp.png";
 
+// testing
+import galleryPainting from "../../../static/assets/imgs/gallery_paintings/image_892.jpg";
+//end of testing
 export default function () {
     return (
-        <div>
-            <img src={frame} alt="" />
+        <div className="galleryItem">
+            <div className="galleryItem-wrapper">
+                {/* <div className="gallery-item-framed-img"></div> */}
+                <img
+                    src={galleryPainting}
+                    alt=""
+                    className="gallery-item-img"
+                />
+            </div>
+            {/* <img src={fancyFrame} alt="" className="gallery-item-frame" /> */}
         </div>
     );
 }
